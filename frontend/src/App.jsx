@@ -21,7 +21,7 @@ function App() {
   }, []);
 
   async function reviewCode() {
-    const response = await axios.post("http://localhost:3000/ai/get-review", {
+    const response = await axios.post("https://vercel.com/rohan-shrivastavas-projects-d9066b34/ai-code-reviewer/api/get-review", {
       code,
     });
     setReview(response.data);
